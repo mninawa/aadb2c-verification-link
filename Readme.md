@@ -5,8 +5,7 @@ The key concept of custom email verification: During sign-up or password reset, 
 
 
 ## Disclaimer
-The sample app is developed and managed by the open-source community in GitHub. The application is not part of Azure AD B2C product and it's not supported under any Microsoft standard support program or service. 
-The app is provided AS IS without warranty of any kind.
+The sample solution is developed and managed by the open-source community in GitHub. The solution is not part of Azure AD B2C product and it's not supported under any Microsoft standard support program or service. The solution is provided AS IS without warranty of any kind.
 
 ## User flow
 During Sign-up or password reset user journey, the policy calls to a Rest API. Sign-up **LocalAccountSignUpWithLogonEmailFirstStep** technical profile and password reset **LocalAccountDiscoveryUsingEmailAddress** technical profiles invokes **REST-API-SendVerificationEmail** verification technical profile who sends the verification email. B2C sends the user email address and policy name as input claims. The REST API endpoint generates a URL with the policy name and send it to the email address.
